@@ -7,8 +7,11 @@
 ## Description/Specs
 
 | Behavior     | Input Example  |Output Example  |
-| ------------- |:-------------:| -----:|-----:|
-
+| ------------- |:-------------:| -----:|
+|if the two are the same, no one wins | rock v rock | "DRAW" |
+| if the two are different, the winner is displayed | Rock v. Scissors | Rock wins |
+| if the two are different, the winner is displayed | Rock v. Paper | Paper wins |
+| if the two are different, the winner is displayed | Paper v. Scissors | Scissors wins |
 
 
 ## Support and contact details
