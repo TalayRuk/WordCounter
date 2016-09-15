@@ -5,7 +5,7 @@ using Nancy;
 using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 
-namespace RockPaperScissors
+namespace //add namespace 
 {
   public class Startup
   {
