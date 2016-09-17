@@ -3,9 +3,9 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using Nancy;
-// using ADDnamespace.Objects;
+using WordCounter.Objects;
 
-namespace //ADDnamespace
+namespace WordCounter
 {
   public class HomeModule : NancyModule
   {
