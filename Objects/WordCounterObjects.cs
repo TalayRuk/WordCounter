@@ -41,7 +41,7 @@ namespace WordCounter.Objects
       string u1 = _userInput1;
       string u2 = _userInput2;
 
-      if (u1 !== u2)
+      if (u1 != u2)
       {
         _result = 0;
       }
