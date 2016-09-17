@@ -1,4 +1,4 @@
-# _Word Count_
+# _Word Counter_
 
 #### _a website in Nancy that uses a method to return how frequently a word appears in a given string. The user should input both the word and the string of words to check. Check for full word matches only. _
 
