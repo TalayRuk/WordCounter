@@ -42,7 +42,8 @@ namespace WordCounter.Objects
       string u2 = _userInput2;
 
       if (u1 != u2)
-      {
+      {//this test doesn't compare letters in string!
+      //only compare that both are string
         _result = 0;
       }
     }
