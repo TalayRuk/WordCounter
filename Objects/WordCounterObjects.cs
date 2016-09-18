@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WordCounter.Objects
 {
@@ -35,15 +36,15 @@ namespace WordCounter.Objects
     {
       return _result;
     }
-    pubic int SetResult(int result)
+    pubic void SetResult()
     {
-      _result = resulte;
+      _result = CounterRepeats();
     }
     //need to add Count()?
     public int CounterRepeats()
     {//need to add private  variable here
-      if (this.GetInput1().any( i => char.IsDigit(i)) || this.GetCompareString().Any(i => char.IsDigit(i)))
-      { return 0 + "Please Enter a word!"
+      if (this.GetInput1().Any( i => char.IsDigit(i)) || this.GetCompareString().Any(i => char.IsDigit(i)))
+      { return 0 + "Please Enter a word!";
       }
       // string u1 = _userInput1;
       // string u2 = _compareString;
