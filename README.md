@@ -8,6 +8,9 @@
 
 | Behavior     | Input1 Example | Input2 Example |Output Example  |
 | ------------- |:-------------:| :-----:| :-----:|
+|Compare single letter inputs | a | b | 0 match found for "a"
+|I chose single letter because it'll be easier to detect
+|Compare single letter inputs | a | a | 1 match found for "a"
 |When inputs2 has entirely different letters from input1, the result is displayed | and | pet | 0 match found for "and"
 |I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
 |When 2 inputs' are exactly the same word, the result is displayed | pet | pet | 1 match found for "pet"
