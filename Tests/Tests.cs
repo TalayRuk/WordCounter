@@ -16,7 +16,7 @@ namespace WordCounter
       Assert.Equal( newcount, testCount.GetResult() );
       //this test doesn't compare letters in string!
       //only compare that both are string
-      //the result always pass 
+      //the result always pass
     }
   }
 

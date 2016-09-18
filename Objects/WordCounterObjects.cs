@@ -36,16 +36,14 @@ namespace WordCounter.Objects
       _userInput2 = userInput2;
     }
     //need to add Count()
-    public void CounterRepeats()
-    {//dneed to add private  variable here
+    public int CounterRepeats()
+    {//need to add private  variable here
       string u1 = _userInput1;
       string u2 = _userInput2;
+      int count = 0;
 
-      if (u1 != u2)
-      {//this test doesn't compare letters in string!
-      //only compare that both are string
-        _result = 0;
-      }
+      foreach (char word in u2)
+       if (word == u1 ) count++;
     }
   }
 }
