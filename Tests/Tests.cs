@@ -10,10 +10,9 @@ namespace WordCounter
     [Fact]
     public void Test1_CounterRepeats_Are2OutputsSame_No()
     {
-      WordsCount testCount = new WordsCount("and", "and");//parameter need to be "string"
-      testCount.CounterRepeats();
+      WordsCount testCount = new WordsCount("and", "1");//parameter need to be "string"
       int newcount = 0;
-      Assert.Equal( newcount, testCount.GetResult() );
+      Assert.Equal( newcount, testCount.CounterRepeats() );
       //this test doesn't compare letters in string!
       //only compare that both are string
       //the result always pass
