@@ -16,12 +16,13 @@
 |Compare partial letters not match | an | and | 0 match found for "an"
 |Compare 2 different words | and | pet | 0 match found for "and"
 |:I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
+|Compare 2 partially same letter words with same length | pet | pen | 0 match found for "pet"
+|Compare partially same words | pet | pets | 0 match found for "pet"
+|:This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match found 
 |Compare 2 exactly same words | pet | pet | 1 match found for "pet"
 |:I chose this matching word because there are only 3 letters, it should be easy to match the letters
 |Compare 2 words; one with Uppercase| PET | pet | 1 match found for "Pet"
 |:I chose pet again because I already have the method from the previous spec. Thus, I only need to add one more method to change all uppercase letters to lowercase letters.
-|Compare partially same words | pet | pets | 0 match found for "pet"
-|:This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match f
 |Compare words with same letters but in partially different position| net | ten | 0 Match found for "net"
 |:I chose "net", "ten" because the letters are exactly the same but are in different places with only "e" share the same place.
 |Compare words with same letters but in different position | near | earn | 0 Match found for "near"
