@@ -7,14 +7,15 @@
   </head>
   <body class="body2">
     <div class="container">
-      <h2>Here is your Word:</h2>
+      <h1>Here is your Word:</h1>
       <h1 class="found">@Model.GetUserWord()</h1>
-      <h2>Here is the comparing sentence: </h2>
+      <h1>Here is the comparing sentence: </h1>
       <h1 class="sentence">@Model.GetCompareString()</h1>
       <img src="../content/img/result-magnifying.jpg" alt="magnifying result" />
-      <h2>Tada...</h2>
-      <h3><span class ="found">v</span> is found <strong class="CountRepeats">@Model.CountRepeats()</strong>times in your sentence.</h3>
-      <a href="/">Let's play again!</a>
+      <h2>...Tada...</h2>
+      <h1><span class ="found">@Model.GetUserWord()</span> is found
+        <strong class="CountRepeats">@Model.CountRepeats()</strong> times in your sentence.</h1>
+      <a class="playagain" href="/">Let's play again!</a>
     </div>
   </body>
 </html>
