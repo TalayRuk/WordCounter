@@ -2,7 +2,7 @@ using Xunit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WordRepeatCounterbjects; //need to add namespace in HomeModule too
+using WordCounter.Objects; //need to add namespace in HomeModule too
 
 namespace WordCounter
 {
@@ -15,5 +15,4 @@ namespace WordCounter
       Assert.Equal( 0 , testCount.CountRepeats() );
     }
   }
-
 }

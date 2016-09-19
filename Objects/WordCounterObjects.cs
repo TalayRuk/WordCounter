@@ -42,7 +42,7 @@ namespace WordCounter.Objects
       {
         if (uWord == word )
         {
-          result++
+          result++;
         }
       }
       return result;
