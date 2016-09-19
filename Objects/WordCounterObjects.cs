@@ -34,14 +34,14 @@ namespace WordCounter.Objects
     {
       _compareString = compareString;
     }
-    public int GetResult()
-    {
-      return _result;
-    }
-    pubic void SetResult()
-    {
-      _result = CountRepeats();
-    }
+    // public int GetResult()
+    // {
+    //   return _result;
+    // }
+    // pubic void SetResult()
+    // {
+    //   _result = CountRepeats();
+    // }
     //need to add Count()?
     public int CountRepeats()
     {//need to add private  variable here
