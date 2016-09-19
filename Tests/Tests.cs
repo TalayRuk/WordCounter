@@ -1,6 +1,7 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using WordCounter.Objects; //need to add namespace in HomeModule too
 
 namespace WordCounter

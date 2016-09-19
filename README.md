@@ -8,6 +8,8 @@
 
 | Behavior     | Input1 Example | Input2 Example |Output Example  |
 | ------------- |:-------------:| :-----:| :-----:|
+|Change input with Uppercase to Lowercase | A | A | a | a
+|It's easier to change just single letter A to a to lowercase letter
 |Compare single letter inputs | a | b | 0 match found for "a"
 |I chose single letter because it'll be easier to detect|
 |Compare single letter inputs | a | a | 1 match found for "a"
