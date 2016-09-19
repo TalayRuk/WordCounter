@@ -20,6 +20,12 @@ namespace WordCounter
       RepeatCounter testCount = new RepeatCounter("a", "a");
       Assert.Equal( 1 , testCount.CountRepeats() );
     }
+    [Fact]
+    public void Test2_CountRepeats_AreUpperCaseInputSameAsLowerCase_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("A", "a");
+      Assert.Equal( 0 , testCount.CountRepeats() );
+    }
   }
 
 }
