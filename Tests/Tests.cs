@@ -21,22 +21,18 @@ namespace WordCounter
       Assert.Equal( 1 , testCount.CountRepeats() );
     }
     [Fact]
-    public void Test2_CountRepeats_AreUpperCaseInputSameAsLowerCase_1()
+    public void Test3_CountRepeats_AreUpperCaseInputSameAsLowerCase_1()
     {
       RepeatCounter testCount = new RepeatCounter("A", "a");
       Assert.Equal( 1 , testCount.CountRepeats() );
     }
-    public void Test2_CountRepeats_ArePartialMatchSame_0()
+    public void Test4_CountRepeats_Are2WordsSame_0()
     {
-      RepeatCounter testCount = new RepeatCounter("an", "and");
-      Assert.Equal( 0 , testCount.CountRepeats() );
+      RepeatCounter testCount = new RepeatCounter("an", "an");
+      Assert.Equal( 1 , testCount.CountRepeats() );
       // not pass!
     }
-    public void Test1_CountRepeats_Are2InputsSame_0()
-    {
-      RepeatCounter testCount = new RepeatCounter("and", "pet");//parameter need to be "string"
-      Assert.Equal( 0 , testCount.CountRepeats() );
-    }
+
   }
 
 }

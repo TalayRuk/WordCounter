@@ -13,12 +13,15 @@
 |Compare single letter inputs | a | a | 1 match found for "a"
 |:Change input with Uppercase to Lowercase | A | a | 1 match found for "A"
 |:Simplest form to change a single letter
-|Compare partial letters not match | an | and | 0 match found for "an"
-|Compare 2 different words | and | pet | 0 match found for "and"
+|Compare 2 letter words | an | an | 1 match found for "an"
+|:Testing for 2 letters
+|Compare 2 letter words that partially different | an | at | 0 match found for "an"
+|:Testing 1 partially different letter
+|Compare 2 different 3 letter words | and | pet | 0 match found for "and"
 |:I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
 |Compare 2 partially same letter words with same length | pet | pen | 0 match found for "pet"
 |Compare partially same words | pet | pets | 0 match found for "pet"
-|:This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match found 
+|:This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match found
 |Compare 2 exactly same words | pet | pet | 1 match found for "pet"
 |:I chose this matching word because there are only 3 letters, it should be easy to match the letters
 |Compare 2 words; one with Uppercase| PET | pet | 1 match found for "Pet"
