@@ -2,21 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>RockPaperScissors</title>
+    <title>WordCounter</title>
     <link rel="stylesheet" href="../content/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   <body class ="body1">
     <img src="../content/img/MAGNIFYING-GLASS-EFFECT2.jpg" alt="magnifying glass" />
-    <form action="/result" method="post">
-      <label for="userWord">Please Enter a word.</label>
-      <input type="text" name="userWord" placeholder="example">
-      <h3>Let's play counting word!</h3>
-      <label for="compareString">Please Enter Sentence. (Good sentence is to have some of previous input word.)</label>
-      <input type="text" name="compareString" placeholder="This is an example sentence. The word count will detect the example word.">
-      <h3>Let's Count how many of your input words, we can find from the sentence above.</h3>
-      <button type="submit" class="btn">Click here to find out!</button>
-    </form>
+    <div class="container">
+      <form action="/result" method="post">
+        <label for="userWord">Please Enter a word.</label>
+        <input type="text" name="userWord" placeholder="example">
+        <h3>Let's play counting word!</h3>
+        <label for="compareString">Please Enter Sentence. (Good sentence is to have some of previous input word.)</label>
+        <input type="text" name="compareString" placeholder="This is an example sentence. The word count will detect the example word.">
+        <h3>Let's Count how many of your input words, we can find from the sentence above.</h3>
+        <button type="submit" class="btn">Click here to find out!</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -17,7 +17,7 @@ namespace WordCounter
 
       Get["/result"] = _ => {
         return View["result.cshtml"];
-      }
+      };
 
 
     }

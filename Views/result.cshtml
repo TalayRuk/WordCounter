@@ -1,13 +1,20 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="../content/styles.css">
     <meta charset="utf-8">
-    <title> </title>
+    <title>Result </title>
   </head>
   <body class="body2">
-
-  @Model must be M (not m) or it'll break -->
-  <!-- <a href="/">home</a>
+    <div class="container">
+      <h2>Here is your Word:</h2>
+      <h1 class="found">@Model.GetUserWord()</h1>
+      <h2>Here is the comparing sentence: </h2>
+      <h1 class="sentence">@Model.GetCompareString()</h1>
+      <img src="../content/img/result-magnifying.jpg" alt="magnifying result" />
+      <h2>Tada...</h2>
+      <h3><span class ="found">v</span> is found <strong class="CountRepeats">@Model.CountRepeats()</strong>times in your sentence.</h3>
+      <a href="/">Let's play again!</a>
+    </div>
   </body>
-</html> -->
+</html>
