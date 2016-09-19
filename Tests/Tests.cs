@@ -26,10 +26,11 @@ namespace WordCounter
       RepeatCounter testCount = new RepeatCounter("A", "a");
       Assert.Equal( 1 , testCount.CountRepeats() );
     }
-    public void Test4_CountRepeats_Are2WordsSame_0()
+    [Fact]//don't forget this line!!!
+    public void Test4_CountRepeats_CountRepeats_AreTheyMatch_1()
     {
-      RepeatCounter testCount = new RepeatCounter("an", "an");
-      Assert.Equal( 1 , testCount.CountRepeats() );
+      RepeatCounter testCount = new RepeatCounter("a", "a b");
+      Assert.Equal( 0 , testCount.CountRepeats() );
       // not pass!
     }
 
