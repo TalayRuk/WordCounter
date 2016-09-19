@@ -15,4 +15,10 @@ namespace WordCounter
       Assert.Equal( 0 , testCount.CountRepeats() );
     }
   }
+  [Fact]
+    public void Test2_CountRepeats_Are2InputsSame_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("a", "a");
+      Assert.Equal( 1 , testCount.CountRepeats() );
+    }
 }
