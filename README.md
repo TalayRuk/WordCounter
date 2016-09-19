@@ -9,24 +9,25 @@
 | Behavior     | Input1 Example | Input2 Example |Output Example  |
 | ------------- |:-------------:| :-----:| :-----:|
 |Compare single letter inputs | a | b | 0 match found for "a"
-|I chose single letter because it'll be easier to detect|
+|:The single letter is the most simplest form to detect|
 |Compare single letter inputs | a | a | 1 match found for "a"
-|Change input with Uppercase to Lowercase | A | a | 1 match found for "A"
-|It's easier to change just single letter A to a to lowercase letter
-|When inputs2 has entirely different letters from input1, the result is displayed | and | pet | 0 match found for "and"
-|I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
-|When 2 inputs' are exactly the same word, the result is displayed | pet | pet | 1 match found for "pet"
-|I chose this matching word because there are only 3 letters, it should be easy to match the letters
-|When 2 inputs are exactly the same word but input1 or input2 may have capital letter, the result is displayed | Pet | pet | 1 match found for "Pet"
-|I chose pet again because I already have the method from the previous spec. Thus, I only need to add one more method to change all uppercase letters to lowercase letters.
-|When input2 has same letters as input1 but input2's word length maybe longer or shorter | pet | pets | 0 match found for "pet"
-|This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match f
-|When input2 has same letters but are placed differently than input1 | net | ten | 0 Match found for "net"
-|I chose "net", "ten" because the letters are exactly the same but are in different places with only "e" share the same place.
-|When input2 has same letters but are placed differently than input1 | near | earn | 0 Match found for "near"
-|I chose "near", "earn" because the letters are exactly the same but are placed entirely in different position.
-|When input2 has string of words | pet | "I have 10 pets and I love each pet the same and I pet them everyday." | 2 match found for "pet"
-|I chose "pet" as input and pet in the sentence, because I have chosen the word ten in previous specs. This should make it easy to implement.
+|:Change input with Uppercase to Lowercase | A | a | 1 match found for "A"
+|:Simplest form to change a single letter
+|Compare partial letters not match | an | and | 0 match found for "an"
+|Compare 2 different words | and | pet | 0 match found for "and"
+|:I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
+|Compare 2 exactly same words | pet | pet | 1 match found for "pet"
+|:I chose this matching word because there are only 3 letters, it should be easy to match the letters
+|Compare 2 words; one with Uppercase| PET | pet | 1 match found for "Pet"
+|:I chose pet again because I already have the method from the previous spec. Thus, I only need to add one more method to change all uppercase letters to lowercase letters.
+|Compare partially same words | pet | pets | 0 match found for "pet"
+|:This test is to prevent partially matching words. I chose to compare "pet" to "pets" because they both exactly the same, but input has 1 more letter than input2. This show that even though words are the same but with one letter different it'll still show as 0 match f
+|Compare words with same letters but in partially different position| net | ten | 0 Match found for "net"
+|:I chose "net", "ten" because the letters are exactly the same but are in different places with only "e" share the same place.
+|Compare words with same letters but in different position | near | earn | 0 Match found for "near"
+|:I chose "near", "earn" because the letters are exactly the same but are placed entirely in different position.
+|Compare word to sentence | pet | "I have 10 pets and I love each pet the same and I pet them everyday." | 2 match found for "pet"
+|:I chose "pet" as input and pet in the sentence, because I have chosen the word ten in previous specs. This should make it easy to implement.
 
 //|when input1 has number mix with word | 7up | 3up | 0 match found for "7up"
 //|when input1 has number mix with word | 7up | 7up | 1 match found for "7up"
