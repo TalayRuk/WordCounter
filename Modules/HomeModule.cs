@@ -16,10 +16,13 @@ namespace WordCounter
       };
 
       Get["/result"] = _ => {
-        return View["result.cshtml"];
+        return View["index.cshtml"];
       };
 
-
+      Post["/result"] = _ => {
+        RepeatCounter newRepeatCounter = new RepeatCounter( Request.Form["new-word"], Request.Form["new-sentence"]);
+        return View["result.cshtml", newRepeatCounter];
+      };
     }
   }
 }
