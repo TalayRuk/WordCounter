@@ -69,6 +69,12 @@ namespace WordCounter
       RepeatCounter testCount = new RepeatCounter("pet", "pet");
       Assert.Equal( 1 , testCount.CountRepeats() );
     }
+    [Fact]
+    public void Test11_CountRepeats_Are2WordsMatch_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("Pet", "pet");
+      Assert.Equal( 1 , testCount.CountRepeats() );
+    }
   }
 
 }
