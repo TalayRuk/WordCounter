@@ -46,23 +46,6 @@ namespace WordCounter.Objects
         }
       }
       return result;
-      // string uW = _userWord;
-      // string cStr = _compareString;
-      // //search uW in cStr
-      // int j = 0;
-      // for (int i =0; i <= cStr.Length; i ++ )
-      //   if (cStr[i] != uW[0]) {
-      //     //find first letter of the word
-      //     // for (j=0; j < uW.Lenght; j++) {
-      //     //   //not match
-      //       // if(cStr[i+j] != uW[j]) {
-      //         return 0;
-      //
-      //     //   }
-      //     // }
-        // }
-
-
     }
   }
 }

@@ -30,8 +30,14 @@ namespace WordCounter
     public void Test4_CountRepeats_CountRepeats_AreTheyMatch_1()
     {
       RepeatCounter testCount = new RepeatCounter("a", "a b");
-      Assert.Equal( 0 , testCount.CountRepeats() );
-      // not pass!
+      Assert.Equal( 1 , testCount.CountRepeats() );
+      // not pass! b/c didn't have Fact !!!
+    }
+    [Fact]
+    public void Test5_CountRepeats_Are2WordsMatch_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("an", "an");
+      Assert.Equal( 1 , testCount.CountRepeats() );
     }
 
   }

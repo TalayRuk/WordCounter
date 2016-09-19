@@ -13,6 +13,8 @@
 |Compare single letter inputs | a | a | 1 match found for "a"
 |:Change input with Uppercase to Lowercase | A | a | 1 match found for "A"
 |:Simplest form to change a single letter
+|Compare to string of 2 letters with space | a | a b | 1 match found for "a"
+|:This is the simplest way to check if letter is detect when there is space in the string. 
 |Compare 2 letter words | an | an | 1 match found for "an"
 |:Testing for 2 letters
 |Compare 2 letter words that partially different | an | at | 0 match found for "an"
