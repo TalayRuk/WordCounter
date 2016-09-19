@@ -13,13 +13,27 @@
 |Compare single letter inputs | a | a | 1 match found for "a"
 |:Change input with Uppercase to Lowercase | A | a | 1 match found for "A"
 |:Simplest form to change a single letter
+|Compare single digit inputs | 0 | 0 | 1 match found for "0"
+|:Using 1 digit number is simplest form to find out if the method can also match number
+|Compare single digit inputs | 0 | 1 | 0 match found for "0"
+|:To confirm that the method will not match to any numbers
+|Compare single digit inputs | 0 | o | 0 match found for "0"
+|:To further confirm that this will not match number to letter
 |Compare to string of 2 letters with space | a | a b | 1 match found for "a"
 |:This is the simplest way to check if letter is detect when there is space in the string.
-|Compare 2 letter words that partially different | an | at | 0 match found for "an"
+|Compare 2 letter-words that partially different | an | at | 0 match found for "an"
 |:Testing 1 partially different letter
-|Compare 2 letter words | an | an | 1 match found for "an"
+|Compare 2 number-words that partially different | 0n | 0t | 0 match found for "0n"
+|:Testing 1 partially different number
+|Compare partial number and letter inputs | i2 | 2i | 0 match found for "i2"
+|:To confirm that number is treated as string, even though same number but different position still not match
+|Compare 2 letter-words | an | an | 1 match found for "an"
 |:Testing for 2 letters
-|Compare 2 different 3 letter words | and | pet | 0 match found for "and"
+|Compare 2 numbers | 12 | 12 | 1 match found for "12"
+|:Testing for 2 numbers
+|Compare 2 letter-number-words | 0n | 0n | 1 match found for "0n"
+|:Testing for 2 mix letter and number
+|Compare 2 different 3 letter-words | and | pet | 0 match found for "and"
 |:I chose "and", "pet" as the inputs because the words are completely different, thus it should be easiest to detect that there are not any matching words found.
 |Compare 2 partially same letter words with same length | pet | pen | 0 match found for "pet"
 |Compare partially same words | pet | pets | 0 match found for "pet"
