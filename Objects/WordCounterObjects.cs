@@ -36,7 +36,7 @@ namespace WordCounter.Objects
     {//need to add  variable here & change to lowercase
       //separate string for uStr
       string uWord = this.GetUserWord().ToLower();
-      string[] uStr = this.GetCompareString().ToLower().Split(' ');
+      string[] uStr = GetCompareString().ToLower().Split(' ');
       int result = 0;
 
       foreach (string word in uStr)
@@ -50,3 +50,25 @@ namespace WordCounter.Objects
     }
   }
 }
+
+    // public string TrimPuncuation()
+    // { string newStr = this.GetCompareString();
+    //   int removeLength = 0;
+    //   for (int i = newStr.Length - 1; i >=0; i--)
+    //   {
+    //     char p = newStr[i];
+    //     if (p == "?" || p == "!" || p == "," || p == "-" || p == "." || p == ";" || p == ":")
+    //     {
+    //       removeLength++;
+    //     }
+    //     else
+    //     {
+    //       break;
+    //     }
+    //   }
+    //     if (removeLength > 0)
+    //     {
+    //       return newStr.Substring(0, newStr.Length - removeLength);
+    //     }
+    //     return newStr
+    // }
