@@ -34,7 +34,7 @@ namespace WordCounter.Objects
 
     public int CountRepeats()
     {//need to add  variable here & change to lowercase
-      //separate string for uStr 
+      //separate string for uStr
       string uWord = this.GetUserWord().ToLower();
       string[] uStr = this.GetCompareString().ToLower().Split(' ');
       int result = 0;
