@@ -34,16 +34,22 @@ namespace WordCounter
       // not pass! b/c didn't have Fact !!!
     }
     [Fact]
-    public void Test5_CountRepeats_Are2WordsMatch_1()
-    {
-      RepeatCounter testCount = new RepeatCounter("an", "an");
-      Assert.Equal( 1 , testCount.CountRepeats() );
-    }
-    [Fact]
-    public void Test6_CountRepeats_Are2WordsMatch_0()
+    public void Test5_CountRepeats_Are2WordsMatch_0()
     {
       RepeatCounter testCount = new RepeatCounter("an", "at");
       Assert.Equal( 0 , testCount.CountRepeats() );
+    }
+    [Fact]
+    public void Test5.1_CountRepeats_Are2lettersMatch_0()
+    {
+      RepeatCounter testCount = new RepeatCounter("1n", "1n");
+      Assert.Equal( 0 , testCount.CountRepeats() );
+    }
+    [Fact]
+    public void Test6_CountRepeats_Are2WordsMatch_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("an", "an");
+      Assert.Equal( 1 , testCount.CountRepeats() );
     }
     [Fact]
     public void Test7_CountRepeats_Are2WordsMatch_0()
@@ -82,10 +88,16 @@ namespace WordCounter
       Assert.Equal( 0 , testCount.CountRepeats() );
     }
     [Fact]
-    public void Test11_CountRepeats_Are2WordsMatch_0()
+    public void Test13_CountRepeats_Are2WordsMatch_0()
     {
       RepeatCounter testCount = new RepeatCounter("near", "earn");
-      Assert.Equal( 1 , testCount.CountRepeats() );
+      Assert.Equal( 0 , testCount.CountRepeats() );
+    }
+    [Fact]
+    public void Test14_CountRepeats_AreWordCountInString_1()
+    {
+      RepeatCounter testCount = new RepeatCounter("pet", "I have 10 pets and I love each pet the same. I pet them everyday, I pet them am & pm.");
+      Assert.Equal( 3 , testCount.CountRepeats() );
     }
   }
 
